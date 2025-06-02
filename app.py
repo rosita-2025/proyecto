@@ -3,7 +3,7 @@ import torch
 from PIL import Image
 import io
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Cargar modelo YOLOv5 desde archivo
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='impresion.pt', force_reload=True)
